@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+body {
+    box-sizing: border-box;
+}
+.vkgroup {
+    border: 0px solid black;
+    border-radius: 5px;
+    height: 220px;
+    max-width: 600px;
+}
+.vkcover {
+    border: 0px solid black;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    max-width: 600px;
+}
+.vkcoverimg {
+    border: 0px solid black;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    max-width: 600px;
+}
+.vkgcont {
+    background: #19191a;
+    width: inherit;
+    border: 0px solid black;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    height: 50px;
+}
+
+.vktext {
+    font-family: Roboto;
+    color: white;
+}
+
+.vkgcont {
+    display: flex;
+    align-items: center;
+    position: relative;
+    border: 0px solid black;
+}
+
+.avatar {
+    border: 0px solid black;
+    border-radius: 50%;
+    width: 37px;
+    height: 37px;
+    padding-left: 11px;
+    padding-right: 11px;
+}
+.grouph {
+    font-size: 15px;
+    line-height: 20px;
+}
+.groupmembers {
+    font-size: 9px;
+}
+
+.vkbutton {
+    font-family: Roboto;
+    text-decoration: none;
+    background: #494949;
+    width: 130;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-size: 11px;
+    border: 0px solid black;
+    border-radius: 3px;
+    transition: 0.2s linear;
+}
+.vkbutton:hover {
+    background: #636363;
+}
+.buttons {
+    position: absolute;
+    right: 15px;
+}
