@@ -21,12 +21,13 @@ $arrmembers = json_decode(file_get_contents('http://api.vk.com/method/groups.get
     <img src="<? echo $arr['response']['0']['cover']['images']['4']['url']; ?>" alt="" class="vkcoverimg">
     </div>
     <div class="vkgcont">
-
+        <div class="vkgcont2">
         <img src="<? echo $arr['response']['0']['photo_50']; ?>" alt="" class="avatar">
         <div class="vktext">
             <span class="grouph"><? echo $arr['response']['0']['name']; ?></span>
             <br>
             <span class="groupmembers"><? echo $arrmembers['response']['count']; ?> подписчиков</span>
+        </div>
         </div>
         <div class="buttons">
             <a href="https://vk.com/<?echo $arr['response']['0']['screen_name']?>" class="vkbutton">Открыть</a>
