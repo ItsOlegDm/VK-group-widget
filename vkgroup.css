@@ -18,7 +18,7 @@ body {
     border: 0px solid black;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-    max-width: 600px;
+    width: 100%;
 }
 .vkgcont {
     background: #19191a;
@@ -26,9 +26,11 @@ body {
     border: 0px solid black;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
-    height: 50px;
+    height: 50px!important;
 }
-
+.vkgcont2 {
+    display: flex;
+}
 .vktext {
     font-family: Roboto;
     color: white;
@@ -37,8 +39,10 @@ body {
 .vkgcont {
     display: flex;
     align-items: center;
+
     position: relative;
     border: 0px solid black;
+    height: 50px!important;
 }
 
 .avatar {
@@ -79,4 +83,29 @@ body {
 .buttons {
     position: absolute;
     right: 15px;
+}
+
+@media screen and (max-width: 800px) {
+    .vkgcont {
+        display: block;
+
+    }
+    .vkgcont {
+        padding-top: 15px;
+        /* position: unset; */
+        height: fit-content!important;
+        box-sizing: border-box;
+        justify-content: center;
+    }
+    .vkbutton {
+        width: calc(100% - 30px);
+    }
+    .buttons {
+        position: unset;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 15px;
+        padding-top: 15px;
+    }
 }
